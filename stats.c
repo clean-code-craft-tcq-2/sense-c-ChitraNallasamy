@@ -29,7 +29,7 @@ Stats compute_statistics(const float* numberset, int setlength) {
           }    
           sum += numberset[i];
         }
-        s.average =(float)sum/setlength;
+        s.average = sum/setlength;
     }
     else
     {

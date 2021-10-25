@@ -4,8 +4,8 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], Stats compu
 {
   if(computedStats.max > maxThreshold)
   {
-    (*alerter_funcptr[0])();
-    (*alerter_funcptr[1])();
+    (*alerters[0])();
+    (*alerters[1])();
   }
 }
 

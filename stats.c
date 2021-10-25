@@ -11,7 +11,7 @@ Stats compute_statistics(const float* numberset, int setlength) {
      s.min = numberset[0];
      sum = numberset[0];
     
-    if((numberset != NULL) && (setlength != 0))
+    if(setlength != 0)
     {       
         for (i=1; i<setlength; i++)
         {

@@ -3,16 +3,16 @@
 
 Stats compute_statistics(const float* numberset, int setlength) {
     Stats s;
-
-    int i;
-    float sum;
-    
-     s.max = numberset[0];
-     s.min = numberset[0];
-     sum = numberset[0];
     
     if(setlength != 0)
-    {       
+    { 
+        int i;
+        float sum;
+    
+         s.max = numberset[0];
+         s.min = numberset[0];
+         sum = numberset[0];
+        
         for (i=1; i<setlength; i++)
         {
           if (numberset[i]> s.max)

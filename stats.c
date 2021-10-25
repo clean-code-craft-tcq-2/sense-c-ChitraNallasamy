@@ -4,7 +4,8 @@
 Stats compute_statistics(const float* numberset, int setlength) {
     Stats s;
 
-    int i,sum;
+    int i;
+    float sum;
     
      s.max = numberset[0];
      s.min = numberset[0];
